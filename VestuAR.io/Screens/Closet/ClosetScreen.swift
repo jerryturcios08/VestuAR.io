@@ -59,7 +59,7 @@ extension ClosetScreen: UITableViewDataSource, UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let closetItem = closetItems[indexPath.row]
-        let closetItemScreen = ClosetItemScreen(closetItemName: closetItem.name)
+        let closetItemScreen = ClosetItemScreen(closetItem: closetItem)
         let destinationScreen = VTNavigationController(rootViewController: closetItemScreen)
         destinationScreen.modalPresentationStyle = .fullScreen
         present(destinationScreen, animated: true)

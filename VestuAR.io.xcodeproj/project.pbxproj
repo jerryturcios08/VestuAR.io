@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C6239A65255F5163007A4D09 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C6239A64255F5163007A4D09 /* SnapKit */; };
+		C65BC65C2560710E00C177AE /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65BC65B2560710E00C177AE /* UIViewController+Ext.swift */; };
 		C68006D0255F371F005CBCBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68006CF255F371F005CBCBB /* AppDelegate.swift */; };
 		C68006D2255F371F005CBCBB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68006D1255F371F005CBCBB /* SceneDelegate.swift */; };
 		C68006D9255F3722005CBCBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C68006D8255F3722005CBCBB /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C65BC65B2560710E00C177AE /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		C68006CC255F371E005CBCBB /* VestuAR.io.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VestuAR.io.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C68006CF255F371F005CBCBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C68006D1255F371F005CBCBB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				C6A6E3A6255F90280022BEDD /* UIStackView+Ext.swift */,
+				C65BC65B2560710E00C177AE /* UIViewController+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			files = (
 				C6A6E380255F7E020022BEDD /* ClosetItemCell.swift in Sources */,
 				C6A2ED9C255F781B00FE44A9 /* SizingScreen.swift in Sources */,
+				C65BC65C2560710E00C177AE /* UIViewController+Ext.swift in Sources */,
 				C6A2ED9F255F783000FE44A9 /* ProfileScreen.swift in Sources */,
 				C6A6E394255F7EF50022BEDD /* constants.swift in Sources */,
 				C6A6E398255F85F50022BEDD /* VTTitleLabel.swift in Sources */,
