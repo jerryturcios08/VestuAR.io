@@ -21,7 +21,7 @@ class VTTabBarController: UITabBarController {
 
         viewControllers = [
             createClosetNavigation(),
-            createMeasureNavigation(),
+            createSizingNavigation(),
             createProfileNavigation()
         ]
     }
@@ -39,17 +39,17 @@ class VTTabBarController: UITabBarController {
         return VTNavigationController(rootViewController: closetScreen)
     }
 
-    private func createMeasureNavigation() -> UINavigationController {
-        let measureScreen = MeasureScreen()
-        measureScreen.title = "Measure"
+    private func createSizingNavigation() -> UINavigationController {
+        let sizingScreen = SizingScreen()
+        sizingScreen.title = "Sizing"
 
-        measureScreen.tabBarItem = UITabBarItem(
+        sizingScreen.tabBarItem = UITabBarItem(
             title: nil,
             image: UIImage(systemName: "ruler"),
             selectedImage: UIImage(systemName: "ruler.fill")
         )
 
-        return VTNavigationController(rootViewController: measureScreen)
+        return VTNavigationController(rootViewController: sizingScreen)
     }
 
     private func createProfileNavigation() -> UINavigationController {

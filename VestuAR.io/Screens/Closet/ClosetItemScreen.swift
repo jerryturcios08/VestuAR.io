@@ -11,7 +11,7 @@ import UIKit
 class ClosetItemScreen: UIViewController {
     // MARK: - Properties
 
-    let arView = ARSCNView()
+    let sceneView = ARSCNView()
 
     private var closetItemName: String
 
@@ -34,17 +34,40 @@ class ClosetItemScreen: UIViewController {
         configureArView()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        configureScene()
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        sceneView.session.pause()
+    }
+
     // MARK: - Defined methods
+
+    func configureScene() {
+        let configuration = ARWorldTrackingConfiguration()
+        configuration.isLightEstimationEnabled = true
+        sceneView.session.run(configuration)
+    }
 
     func configureScreen() {
         title = closetItemName
         view.backgroundColor = .systemBackground
-        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .close, target: self, action: #selector(dismissScreen))
+
+        navigationItem.leftBarButtonItem = UIBarButtonItem(
+            barButtonSystemItem: .close,
+            target: self,
+            action: #selector(dismissScreen)
+        )
     }
 
     func configureArView() {
-        view.addSubview(arView)
-        arView.snp.makeConstraints { $0.size.equalTo(view) }
+        view.addSubview(sceneView)
+        sceneView.showsStatistics = true
+        sceneView.debugOptions = [.showFeaturePoints, .showWorldOrigin]
+        sceneView.snp.makeConstraints { $0.size.equalTo(view) }
     }
 
     // MARK: - Action methods

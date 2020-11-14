@@ -14,7 +14,7 @@
 		C68006DC255F3722005CBCBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C68006DA255F3722005CBCBB /* LaunchScreen.storyboard */; };
 		C6A2ED96255F76F700FE44A9 /* VTTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A2ED95255F76F700FE44A9 /* VTTabBarController.swift */; };
 		C6A2ED99255F77AF00FE44A9 /* ClosetScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A2ED98255F77AF00FE44A9 /* ClosetScreen.swift */; };
-		C6A2ED9C255F781B00FE44A9 /* MeasureScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A2ED9B255F781B00FE44A9 /* MeasureScreen.swift */; };
+		C6A2ED9C255F781B00FE44A9 /* SizingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A2ED9B255F781B00FE44A9 /* SizingScreen.swift */; };
 		C6A2ED9F255F783000FE44A9 /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A2ED9E255F783000FE44A9 /* ProfileScreen.swift */; };
 		C6A2EDA2255F79D800FE44A9 /* VTNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A2EDA1255F79D800FE44A9 /* VTNavigationController.swift */; };
 		C6A6E380255F7E020022BEDD /* ClosetItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A6E37F255F7E020022BEDD /* ClosetItemCell.swift */; };
@@ -29,6 +29,7 @@
 		C6A6E39E255F8B330022BEDD /* ClosetItemScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A6E39D255F8B330022BEDD /* ClosetItemScreen.swift */; };
 		C6A6E3A2255F8E730022BEDD /* VTBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A6E3A1255F8E730022BEDD /* VTBodyLabel.swift */; };
 		C6A6E3A7255F90280022BEDD /* UIStackView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A6E3A6255F90280022BEDD /* UIStackView+Ext.swift */; };
+		C6A6E3B1255F96AA0022BEDD /* VTButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A6E3B0255F96AA0022BEDD /* VTButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +41,7 @@
 		C68006DD255F3722005CBCBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6A2ED95255F76F700FE44A9 /* VTTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTTabBarController.swift; sourceTree = "<group>"; };
 		C6A2ED98255F77AF00FE44A9 /* ClosetScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetScreen.swift; sourceTree = "<group>"; };
-		C6A2ED9B255F781B00FE44A9 /* MeasureScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureScreen.swift; sourceTree = "<group>"; };
+		C6A2ED9B255F781B00FE44A9 /* SizingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizingScreen.swift; sourceTree = "<group>"; };
 		C6A2ED9E255F783000FE44A9 /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
 		C6A2EDA1255F79D800FE44A9 /* VTNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTNavigationController.swift; sourceTree = "<group>"; };
 		C6A6E37F255F7E020022BEDD /* ClosetItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetItemCell.swift; sourceTree = "<group>"; };
@@ -55,6 +56,7 @@
 		C6A6E39D255F8B330022BEDD /* ClosetItemScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetItemScreen.swift; sourceTree = "<group>"; };
 		C6A6E3A1255F8E730022BEDD /* VTBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTBodyLabel.swift; sourceTree = "<group>"; };
 		C6A6E3A6255F90280022BEDD /* UIStackView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Ext.swift"; sourceTree = "<group>"; };
+		C6A6E3B0255F96AA0022BEDD /* VTButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				C68B1AA1255F7BA10030AD92 /* Closet */,
-				C68B1AA3255F7BA50030AD92 /* Measure */,
 				C68B1AA4255F7BA90030AD92 /* Profile */,
+				C68B1AA3255F7BA50030AD92 /* Sizing */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -122,12 +124,12 @@
 			path = Closet;
 			sourceTree = "<group>";
 		};
-		C68B1AA3255F7BA50030AD92 /* Measure */ = {
+		C68B1AA3255F7BA50030AD92 /* Sizing */ = {
 			isa = PBXGroup;
 			children = (
-				C6A2ED9B255F781B00FE44A9 /* MeasureScreen.swift */,
+				C6A2ED9B255F781B00FE44A9 /* SizingScreen.swift */,
 			);
-			path = Measure;
+			path = Sizing;
 			sourceTree = "<group>";
 		};
 		C68B1AA4255F7BA90030AD92 /* Profile */ = {
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				C6A6E3A1255F8E730022BEDD /* VTBodyLabel.swift */,
+				C6A6E3B0255F96AA0022BEDD /* VTButton.swift */,
 				C6A6E39A255F8A0B0022BEDD /* VTImageView.swift */,
 				C6A2EDA1255F79D800FE44A9 /* VTNavigationController.swift */,
 				C6A2ED95255F76F700FE44A9 /* VTTabBarController.swift */,
@@ -274,7 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6A6E380255F7E020022BEDD /* ClosetItemCell.swift in Sources */,
-				C6A2ED9C255F781B00FE44A9 /* MeasureScreen.swift in Sources */,
+				C6A2ED9C255F781B00FE44A9 /* SizingScreen.swift in Sources */,
 				C6A2ED9F255F783000FE44A9 /* ProfileScreen.swift in Sources */,
 				C6A6E394255F7EF50022BEDD /* constants.swift in Sources */,
 				C6A6E398255F85F50022BEDD /* VTTitleLabel.swift in Sources */,
@@ -288,6 +291,7 @@
 				C6A2EDA2255F79D800FE44A9 /* VTNavigationController.swift in Sources */,
 				C68006D0255F371F005CBCBB /* AppDelegate.swift in Sources */,
 				C68006D2255F371F005CBCBB /* SceneDelegate.swift in Sources */,
+				C6A6E3B1255F96AA0022BEDD /* VTButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
