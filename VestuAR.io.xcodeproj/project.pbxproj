@@ -3,27 +3,48 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C6239A65255F5163007A4D09 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C6239A64255F5163007A4D09 /* SnapKit */; };
 		C68006D0255F371F005CBCBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68006CF255F371F005CBCBB /* AppDelegate.swift */; };
 		C68006D2255F371F005CBCBB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68006D1255F371F005CBCBB /* SceneDelegate.swift */; };
-		C68006D4255F371F005CBCBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68006D3255F371F005CBCBB /* ViewController.swift */; };
-		C68006D7255F371F005CBCBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C68006D5255F371F005CBCBB /* Main.storyboard */; };
 		C68006D9255F3722005CBCBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C68006D8255F3722005CBCBB /* Assets.xcassets */; };
 		C68006DC255F3722005CBCBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C68006DA255F3722005CBCBB /* LaunchScreen.storyboard */; };
+		C6A2ED96255F76F700FE44A9 /* VTTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A2ED95255F76F700FE44A9 /* VTTabBarController.swift */; };
+		C6A2ED99255F77AF00FE44A9 /* ClosetScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A2ED98255F77AF00FE44A9 /* ClosetScreen.swift */; };
+		C6A2ED9C255F781B00FE44A9 /* MeasureScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A2ED9B255F781B00FE44A9 /* MeasureScreen.swift */; };
+		C6A2ED9F255F783000FE44A9 /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A2ED9E255F783000FE44A9 /* ProfileScreen.swift */; };
+		C6A2EDA2255F79D800FE44A9 /* VTNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A2EDA1255F79D800FE44A9 /* VTNavigationController.swift */; };
+		C6A6E380255F7E020022BEDD /* ClosetItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A6E37F255F7E020022BEDD /* ClosetItemCell.swift */; };
+		C6A6E386255F7E170022BEDD /* ClosetItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A6E385255F7E170022BEDD /* ClosetItem.swift */; };
+		C6A6E38D255F7EDA0022BEDD /* dress2.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C6A6E389255F7ED70022BEDD /* dress2.usdz */; };
+		C6A6E38E255F7EDA0022BEDD /* dress4.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C6A6E38A255F7ED90022BEDD /* dress4.usdz */; };
+		C6A6E38F255F7EDA0022BEDD /* dress1.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C6A6E38B255F7EDA0022BEDD /* dress1.usdz */; };
+		C6A6E390255F7EDA0022BEDD /* dress3.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C6A6E38C255F7EDA0022BEDD /* dress3.usdz */; };
+		C6A6E394255F7EF50022BEDD /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A6E393255F7EF50022BEDD /* constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C68006CC255F371E005CBCBB /* VestuAR.io.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VestuAR.io.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C68006CF255F371F005CBCBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C68006D1255F371F005CBCBB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C68006D3255F371F005CBCBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C68006D6255F371F005CBCBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C68006D8255F3722005CBCBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C68006DB255F3722005CBCBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C68006DD255F3722005CBCBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6A2ED95255F76F700FE44A9 /* VTTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTTabBarController.swift; sourceTree = "<group>"; };
+		C6A2ED98255F77AF00FE44A9 /* ClosetScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetScreen.swift; sourceTree = "<group>"; };
+		C6A2ED9B255F781B00FE44A9 /* MeasureScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureScreen.swift; sourceTree = "<group>"; };
+		C6A2ED9E255F783000FE44A9 /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
+		C6A2EDA1255F79D800FE44A9 /* VTNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTNavigationController.swift; sourceTree = "<group>"; };
+		C6A6E37F255F7E020022BEDD /* ClosetItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetItemCell.swift; sourceTree = "<group>"; };
+		C6A6E385255F7E170022BEDD /* ClosetItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetItem.swift; sourceTree = "<group>"; };
+		C6A6E389255F7ED70022BEDD /* dress2.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = dress2.usdz; sourceTree = "<group>"; };
+		C6A6E38A255F7ED90022BEDD /* dress4.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = dress4.usdz; sourceTree = "<group>"; };
+		C6A6E38B255F7EDA0022BEDD /* dress1.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = dress1.usdz; sourceTree = "<group>"; };
+		C6A6E38C255F7EDA0022BEDD /* dress3.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = dress3.usdz; sourceTree = "<group>"; };
+		C6A6E393255F7EF50022BEDD /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6239A65255F5163007A4D09 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +78,97 @@
 		C68006CE255F371F005CBCBB /* VestuAR.io */ = {
 			isa = PBXGroup;
 			children = (
+				C6A6E384255F7E0F0022BEDD /* Assets */,
+				C6A6E37E255F7DEF0022BEDD /* Cells */,
+				C6A6E383255F7E070022BEDD /* Models */,
+				C68B1AA0255F7B9C0030AD92 /* Screens */,
+				C68B1AA6255F7BB60030AD92 /* Subclasses */,
+				C6A6E392255F7EEA0022BEDD /* Utilities */,
 				C68006CF255F371F005CBCBB /* AppDelegate.swift */,
 				C68006D8255F3722005CBCBB /* Assets.xcassets */,
 				C68006DD255F3722005CBCBB /* Info.plist */,
 				C68006DA255F3722005CBCBB /* LaunchScreen.storyboard */,
-				C68006D5255F371F005CBCBB /* Main.storyboard */,
 				C68006D1255F371F005CBCBB /* SceneDelegate.swift */,
-				C68006D3255F371F005CBCBB /* ViewController.swift */,
 			);
 			path = VestuAR.io;
+			sourceTree = "<group>";
+		};
+		C68B1AA0255F7B9C0030AD92 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				C68B1AA1255F7BA10030AD92 /* Closet */,
+				C68B1AA3255F7BA50030AD92 /* Measure */,
+				C68B1AA4255F7BA90030AD92 /* Profile */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		C68B1AA1255F7BA10030AD92 /* Closet */ = {
+			isa = PBXGroup;
+			children = (
+				C6A2ED98255F77AF00FE44A9 /* ClosetScreen.swift */,
+			);
+			path = Closet;
+			sourceTree = "<group>";
+		};
+		C68B1AA3255F7BA50030AD92 /* Measure */ = {
+			isa = PBXGroup;
+			children = (
+				C6A2ED9B255F781B00FE44A9 /* MeasureScreen.swift */,
+			);
+			path = Measure;
+			sourceTree = "<group>";
+		};
+		C68B1AA4255F7BA90030AD92 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				C6A2ED9E255F783000FE44A9 /* ProfileScreen.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		C68B1AA6255F7BB60030AD92 /* Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				C6A2EDA1255F79D800FE44A9 /* VTNavigationController.swift */,
+				C6A2ED95255F76F700FE44A9 /* VTTabBarController.swift */,
+			);
+			path = Subclasses;
+			sourceTree = "<group>";
+		};
+		C6A6E37E255F7DEF0022BEDD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C6A6E37F255F7E020022BEDD /* ClosetItemCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C6A6E383255F7E070022BEDD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C6A6E385255F7E170022BEDD /* ClosetItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C6A6E384255F7E0F0022BEDD /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				C6A6E38B255F7EDA0022BEDD /* dress1.usdz */,
+				C6A6E389255F7ED70022BEDD /* dress2.usdz */,
+				C6A6E38C255F7EDA0022BEDD /* dress3.usdz */,
+				C6A6E38A255F7ED90022BEDD /* dress4.usdz */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		C6A6E392255F7EEA0022BEDD /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C6A6E393255F7EF50022BEDD /* constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +187,9 @@
 			dependencies = (
 			);
 			name = VestuAR.io;
+			packageProductDependencies = (
+				C6239A64255F5163007A4D09 /* SnapKit */,
+			);
 			productName = VestuAR.io;
 			productReference = C68006CC255F371E005CBCBB /* VestuAR.io.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +217,9 @@
 				Base,
 			);
 			mainGroup = C68006C3255F371E005CBCBB;
+			packageReferences = (
+				C6239A63255F5163007A4D09 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = C68006CD255F371E005CBCBB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -124,9 +234,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6A6E38E255F7EDA0022BEDD /* dress4.usdz in Resources */,
 				C68006DC255F3722005CBCBB /* LaunchScreen.storyboard in Resources */,
+				C6A6E38F255F7EDA0022BEDD /* dress1.usdz in Resources */,
 				C68006D9255F3722005CBCBB /* Assets.xcassets in Resources */,
-				C68006D7255F371F005CBCBB /* Main.storyboard in Resources */,
+				C6A6E38D255F7EDA0022BEDD /* dress2.usdz in Resources */,
+				C6A6E390255F7EDA0022BEDD /* dress3.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +250,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C68006D4255F371F005CBCBB /* ViewController.swift in Sources */,
+				C6A6E380255F7E020022BEDD /* ClosetItemCell.swift in Sources */,
+				C6A2ED9C255F781B00FE44A9 /* MeasureScreen.swift in Sources */,
+				C6A2ED9F255F783000FE44A9 /* ProfileScreen.swift in Sources */,
+				C6A6E394255F7EF50022BEDD /* constants.swift in Sources */,
+				C6A2ED99255F77AF00FE44A9 /* ClosetScreen.swift in Sources */,
+				C6A6E386255F7E170022BEDD /* ClosetItem.swift in Sources */,
+				C6A2ED96255F76F700FE44A9 /* VTTabBarController.swift in Sources */,
+				C6A2EDA2255F79D800FE44A9 /* VTNavigationController.swift in Sources */,
 				C68006D0255F371F005CBCBB /* AppDelegate.swift in Sources */,
 				C68006D2255F371F005CBCBB /* SceneDelegate.swift in Sources */,
 			);
@@ -146,14 +266,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C68006D5255F371F005CBCBB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C68006D6255F371F005CBCBB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C68006DA255F3722005CBCBB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -341,6 +453,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C6239A63255F5163007A4D09 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C6239A64255F5163007A4D09 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6239A63255F5163007A4D09 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C68006C4255F371E005CBCBB /* Project object */;
 }
