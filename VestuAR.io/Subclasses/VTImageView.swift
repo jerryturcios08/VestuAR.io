@@ -18,7 +18,7 @@ class VTImageView: UIImageView {
     }
 
     private func configure() {
-        layer.cornerRadius = 10
+        layer.cornerRadius = 8
         layer.borderWidth = 1
         layer.borderColor = UIColor.gray.cgColor
         clipsToBounds = true

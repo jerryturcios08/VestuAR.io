@@ -26,6 +26,9 @@
 		C6A6E394255F7EF50022BEDD /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A6E393255F7EF50022BEDD /* constants.swift */; };
 		C6A6E398255F85F50022BEDD /* VTTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A6E397255F85F50022BEDD /* VTTitleLabel.swift */; };
 		C6A6E39B255F8A0B0022BEDD /* VTImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A6E39A255F8A0B0022BEDD /* VTImageView.swift */; };
+		C6A6E39E255F8B330022BEDD /* ClosetItemScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A6E39D255F8B330022BEDD /* ClosetItemScreen.swift */; };
+		C6A6E3A2255F8E730022BEDD /* VTBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A6E3A1255F8E730022BEDD /* VTBodyLabel.swift */; };
+		C6A6E3A7255F90280022BEDD /* UIStackView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A6E3A6255F90280022BEDD /* UIStackView+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +52,9 @@
 		C6A6E393255F7EF50022BEDD /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 		C6A6E397255F85F50022BEDD /* VTTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTTitleLabel.swift; sourceTree = "<group>"; };
 		C6A6E39A255F8A0B0022BEDD /* VTImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTImageView.swift; sourceTree = "<group>"; };
+		C6A6E39D255F8B330022BEDD /* ClosetItemScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetItemScreen.swift; sourceTree = "<group>"; };
+		C6A6E3A1255F8E730022BEDD /* VTBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTBodyLabel.swift; sourceTree = "<group>"; };
+		C6A6E3A6255F90280022BEDD /* UIStackView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,7 @@
 		C68B1AA1255F7BA10030AD92 /* Closet */ = {
 			isa = PBXGroup;
 			children = (
+				C6A6E39D255F8B330022BEDD /* ClosetItemScreen.swift */,
 				C6A2ED98255F77AF00FE44A9 /* ClosetScreen.swift */,
 			);
 			path = Closet;
@@ -134,10 +141,11 @@
 		C68B1AA6255F7BB60030AD92 /* Subclasses */ = {
 			isa = PBXGroup;
 			children = (
+				C6A6E3A1255F8E730022BEDD /* VTBodyLabel.swift */,
+				C6A6E39A255F8A0B0022BEDD /* VTImageView.swift */,
 				C6A2EDA1255F79D800FE44A9 /* VTNavigationController.swift */,
 				C6A2ED95255F76F700FE44A9 /* VTTabBarController.swift */,
 				C6A6E397255F85F50022BEDD /* VTTitleLabel.swift */,
-				C6A6E39A255F8A0B0022BEDD /* VTImageView.swift */,
 			);
 			path = Subclasses;
 			sourceTree = "<group>";
@@ -172,9 +180,18 @@
 		C6A6E392255F7EEA0022BEDD /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				C6A6E3A5255F901D0022BEDD /* Extensions */,
 				C6A6E393255F7EF50022BEDD /* constants.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C6A6E3A5255F901D0022BEDD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C6A6E3A6255F90280022BEDD /* UIStackView+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +279,12 @@
 				C6A6E394255F7EF50022BEDD /* constants.swift in Sources */,
 				C6A6E398255F85F50022BEDD /* VTTitleLabel.swift in Sources */,
 				C6A2ED99255F77AF00FE44A9 /* ClosetScreen.swift in Sources */,
+				C6A6E3A7255F90280022BEDD /* UIStackView+Ext.swift in Sources */,
+				C6A6E3A2255F8E730022BEDD /* VTBodyLabel.swift in Sources */,
 				C6A6E386255F7E170022BEDD /* ClosetItem.swift in Sources */,
 				C6A2ED96255F76F700FE44A9 /* VTTabBarController.swift in Sources */,
 				C6A6E39B255F8A0B0022BEDD /* VTImageView.swift in Sources */,
+				C6A6E39E255F8B330022BEDD /* ClosetItemScreen.swift in Sources */,
 				C6A2EDA2255F79D800FE44A9 /* VTNavigationController.swift in Sources */,
 				C68006D0255F371F005CBCBB /* AppDelegate.swift in Sources */,
 				C68006D2255F371F005CBCBB /* SceneDelegate.swift in Sources */,

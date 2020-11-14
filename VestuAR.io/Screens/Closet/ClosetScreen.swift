@@ -8,13 +8,18 @@
 import UIKit
 
 class ClosetScreen: UIViewController {
+    // MARK: - Properties
+
     let closetTableView = UITableView()
 
     var closetItems = ClosetItem.getSampleCloset()
 
+    // MARK: - Lifecycle methods
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        configure()
+        view.backgroundColor = .systemBackground
+        configureClosetTableView()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -25,22 +30,16 @@ class ClosetScreen: UIViewController {
         }
     }
 
-    func configure() {
-        view.backgroundColor = .systemBackground
-        configureClosetTableView()
-    }
+    // MARK: - Defined methods
 
     func configureClosetTableView() {
         view.addSubview(closetTableView)
-        closetTableView.rowHeight = 120
+        closetTableView.rowHeight = 100
         closetTableView.separatorStyle = .none
         closetTableView.dataSource = self
         closetTableView.delegate = self
         closetTableView.register(ClosetItemCell.self, forCellReuseIdentifier: ClosetItemCell.reuseId)
-
-        closetTableView.snp.makeConstraints { make in
-            make.size.equalTo(view)
-        }
+        closetTableView.snp.makeConstraints { $0.size.equalTo(view) }
     }
 }
 
@@ -56,5 +55,13 @@ extension ClosetScreen: UITableViewDataSource, UITableViewDelegate {
         let closetItem = closetItems[indexPath.row]
         cell.set(closetItem: closetItem)
         return cell
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let closetItem = closetItems[indexPath.row]
+        let closetItemScreen = ClosetItemScreen(closetItemName: closetItem.name)
+        let destinationScreen = VTNavigationController(rootViewController: closetItemScreen)
+        destinationScreen.modalPresentationStyle = .fullScreen
+        present(destinationScreen, animated: true)
     }
 }
