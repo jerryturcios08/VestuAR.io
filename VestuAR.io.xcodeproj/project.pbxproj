@@ -24,6 +24,8 @@
 		C6A6E38F255F7EDA0022BEDD /* dress1.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C6A6E38B255F7EDA0022BEDD /* dress1.usdz */; };
 		C6A6E390255F7EDA0022BEDD /* dress3.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C6A6E38C255F7EDA0022BEDD /* dress3.usdz */; };
 		C6A6E394255F7EF50022BEDD /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A6E393255F7EF50022BEDD /* constants.swift */; };
+		C6A6E398255F85F50022BEDD /* VTTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A6E397255F85F50022BEDD /* VTTitleLabel.swift */; };
+		C6A6E39B255F8A0B0022BEDD /* VTImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A6E39A255F8A0B0022BEDD /* VTImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		C6A6E38B255F7EDA0022BEDD /* dress1.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = dress1.usdz; sourceTree = "<group>"; };
 		C6A6E38C255F7EDA0022BEDD /* dress3.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = dress3.usdz; sourceTree = "<group>"; };
 		C6A6E393255F7EF50022BEDD /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
+		C6A6E397255F85F50022BEDD /* VTTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTTitleLabel.swift; sourceTree = "<group>"; };
+		C6A6E39A255F8A0B0022BEDD /* VTImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,8 @@
 			children = (
 				C6A2EDA1255F79D800FE44A9 /* VTNavigationController.swift */,
 				C6A2ED95255F76F700FE44A9 /* VTTabBarController.swift */,
+				C6A6E397255F85F50022BEDD /* VTTitleLabel.swift */,
+				C6A6E39A255F8A0B0022BEDD /* VTImageView.swift */,
 			);
 			path = Subclasses;
 			sourceTree = "<group>";
@@ -254,9 +260,11 @@
 				C6A2ED9C255F781B00FE44A9 /* MeasureScreen.swift in Sources */,
 				C6A2ED9F255F783000FE44A9 /* ProfileScreen.swift in Sources */,
 				C6A6E394255F7EF50022BEDD /* constants.swift in Sources */,
+				C6A6E398255F85F50022BEDD /* VTTitleLabel.swift in Sources */,
 				C6A2ED99255F77AF00FE44A9 /* ClosetScreen.swift in Sources */,
 				C6A6E386255F7E170022BEDD /* ClosetItem.swift in Sources */,
 				C6A2ED96255F76F700FE44A9 /* VTTabBarController.swift in Sources */,
+				C6A6E39B255F8A0B0022BEDD /* VTImageView.swift in Sources */,
 				C6A2EDA2255F79D800FE44A9 /* VTNavigationController.swift in Sources */,
 				C68006D0255F371F005CBCBB /* AppDelegate.swift in Sources */,
 				C68006D2255F371F005CBCBB /* SceneDelegate.swift in Sources */,
