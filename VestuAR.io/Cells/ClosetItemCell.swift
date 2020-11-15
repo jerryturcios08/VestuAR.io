@@ -14,7 +14,7 @@ class ClosetItemCell: UITableViewCell {
     static let reuseId = "ClosetItem"
 
     let closetItemImageView = VTImageView(frame: .zero)
-    let closetItemNameLabel = VTTitleLabel(textAlignment: .left, fontSize: 22)
+    let closetItemNameLabel = VTTitleLabel(textAlignment: .left, fontSize: 22, weight: .bold)
     let closetItemCompanyLabel = VTBodyLabel(textAlignment: .left)
     let labelStackView = UIStackView()
 

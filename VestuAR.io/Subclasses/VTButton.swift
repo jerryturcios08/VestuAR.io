@@ -32,7 +32,7 @@ class VTButton: UIButton {
     private func configure() {
         translatesAutoresizingMaskIntoConstraints = false
         layer.borderWidth = 1
-        layer.borderColor = UIColor.black.cgColor
-        setTitleColor(.black, for: .normal)
+        layer.borderColor = UIColor.label.cgColor
+        setTitleColor(.label, for: .normal)
     }
 }

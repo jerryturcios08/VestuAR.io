@@ -17,10 +17,10 @@ class VTTitleLabel: UILabel {
         fatalError("init(coder:) has not been implemented")
     }
 
-    convenience init(textAlignment: NSTextAlignment, fontSize: CGFloat) {
+    convenience init(textAlignment: NSTextAlignment, fontSize: CGFloat, weight: UIFont.Weight) {
         self.init(frame: .zero)
         self.textAlignment = textAlignment
-        self.font = .systemFont(ofSize: fontSize, weight: .bold)
+        self.font = .systemFont(ofSize: fontSize, weight: weight)
     }
 
     private func configure() {
